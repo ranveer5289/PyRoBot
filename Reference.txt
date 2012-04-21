@@ -1,0 +1,6 @@
+glTranslate and glRotate are always relative to the matrix's current state. So for instance, if you call glTranslate, you are translating from the matrix's current 'position', not from the origin. But if you want to start over at the origin, that's when you call glLoadIdentity(), and then you can glTranslate from the matrix which is now located at the origin, or glRotate from the matrix which is now oriented in the default direction.
+
+
+u -> Move away from user.
+U-> Move closer to user
+l,L,j,J -> Move around
